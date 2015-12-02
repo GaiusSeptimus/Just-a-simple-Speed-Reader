@@ -13,6 +13,7 @@ $(function() {
     $('.pause').click(function() {
         $('.notrunning').removeClass('hide');
         $('.running').addClass('hide');
+        $('.hiderunning').removeClass('disable');
         stop();
     });
     $('.demo').click(function() {
@@ -22,11 +23,12 @@ $(function() {
 });
 
 function start() {
-    words = $('#copy').text().replace(/\n/g, " --- ") .split(" ").clean("");
+    words = $('#copy').val().replace(/\n/g, " --- ") .split(" ").clean("");
     if(words.length > 0)
     {
         $('.notrunning').addClass('hide');
         $('.running').removeClass('hide');
+        $('.hiderunning').addClass('disable');
         speed = 60000 / $('.speed').val();
         nextWord();
     }
