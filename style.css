@@ -35,6 +35,9 @@ input[type=button] {
 select{
     font-size: 0.5em;
     padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     min-height: 20px;
     margin: 10px 0px 10px 0px;
 }

@@ -7,11 +7,17 @@
 }
 
 input[type=button] {
-    min-height: 20px;
     font-size: 0.8em;
+    min-height: 20px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
 }
 
 select{
     font-size: 0.8em;
     min-height: 20px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
 }
